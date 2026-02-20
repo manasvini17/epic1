@@ -1,0 +1,6 @@
+import hashlib
+
+class FingerprintService:
+    @staticmethod
+    def sha256_bytes(data: bytes) -> str:
+        return hashlib.sha256(data).hexdigest()
